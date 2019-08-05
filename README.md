@@ -3,6 +3,8 @@ Crypto
 
 Crypto is used to encrypt and decrypt text using specified [cipher](https://docs.oracle.com/javase/7/docs/api/javax/crypto/Cipher.html). A symetric key is generated using KeyGenerator & Stored in Android KeyStore for encryption and decryption purpose.
 
+<img src="https://github.com/tulsiramr/crypto/blob/master/crypto.png" width="360">
+
 Gradle
 ------
 ```
