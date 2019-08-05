@@ -7,7 +7,7 @@ Gradle
 ------
 ```
 dependencies {
-    implementation 'com.tulsiram:crypto:1.0.1'
+    implementation 'com.tulsiram:crypto:1.0.2'
 }
 ```
 
@@ -20,7 +20,7 @@ val algorithm = Algorithm(
     KeyProperties.BLOCK_MODE_GCM,
     KeyProperties.ENCRYPTION_PADDING_NONE
 )
-val algorithmSpec = AlgorithmSpec(algorithm, "AndroidKeyStore", "Alias")
+val algorithmSpec = AlgorithmSpec(algorithm, "Alias")
 val crypto = Crypto.getInstance(algorithmSpec)
 
 val text = "test"
@@ -34,6 +34,12 @@ Support
 
 Changelog
 ---------
+* **1.0.2**
+    * Sample App Included
+    * Code Refactoring
+* **1.0.1**
+    * Error Handling
+    * Test Cases Added
 * **1.0.0**
     * Initial release
 
