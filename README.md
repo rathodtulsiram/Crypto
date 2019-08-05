@@ -7,7 +7,7 @@ Gradle
 ------
 ```
 dependencies {
-    implementation 'com.tulsiram:crypto:1.0.0'
+    implementation 'com.tulsiram:crypto:1.0.1'
 }
 ```
 
