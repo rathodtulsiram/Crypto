@@ -7,6 +7,11 @@ package com.tulsiram.crypto
 import android.security.keystore.KeyProperties.*
 
 /**
+ * @return [ALIAS] as default alias
+ */
+private const val ALIAS = "Alias"
+
+/**
  * data class used to store algorithm specification details
  *
  * @see [android.security.keystore.KeyProperties]
@@ -14,8 +19,8 @@ import android.security.keystore.KeyProperties.*
  * @param alias alias for keystore
  */
 data class AlgorithmSpec(
-    val algorithm: Algorithm,
-    val alias: String
+    val algorithm: Algorithm = Algorithm(),
+    val alias: String = ALIAS
 )
 
 /**

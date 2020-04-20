@@ -23,6 +23,13 @@ val algorithm = Algorithm(
     KeyProperties.ENCRYPTION_PADDING_NONE
 )
 val algorithmSpec = AlgorithmSpec(algorithm, "Alias")
+```
+```
+or algorithmSpec with default value
+```
+```kotlin
+val algorithmSpec = AlgorithmSpec()
+
 val crypto = Crypto.getInstance(algorithmSpec)
 
 val text = "test"
