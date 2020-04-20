@@ -43,6 +43,9 @@ Support
 
 Changelog
 ---------
+* **2.0.0**
+    * Default value for AlgorithmSpecs
+    * Code Refactoring
 * **1.0.2**
     * Sample App Included
     * Code Refactoring
