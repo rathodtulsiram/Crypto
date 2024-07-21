@@ -1,17 +1,10 @@
-Crypto
+Vault
 ===============
 
-Crypto is used to encrypt and decrypt text using specified [cipher](https://docs.oracle.com/javase/7/docs/api/javax/crypto/Cipher.html). A symetric key is generated using KeyGenerator & Stored in Android KeyStore for encryption and decryption purpose.
+Vault is used to encrypt and decrypt text using specified [cipher](https://docs.oracle.com/javase/7/docs/api/javax/crypto/Cipher.html). A symetric key is generated using KeyGenerator & Stored in Android KeyStore for encryption and decryption purpose.
 
-<img src="https://github.com/tulsiramr/crypto/blob/master/crypto.png" width="360">
+<img src="https://github.com/tulsiramr/vault/blob/master/vault.png" width="360">
 
-Gradle
-------
-```
-dependencies {
-    implementation 'com.tulsiram:crypto:2.0.0'
-}
-```
 
 Usage
 -----
@@ -30,16 +23,17 @@ or algorithmSpec with default value
 ```kotlin
 val algorithmSpec = AlgorithmSpec()
 
-val crypto = Crypto.getInstance(algorithmSpec)
+val vault = Vault.getInstance(algorithmSpec)
 
 val text = "test"
-val encrypted = crypto.encrypt(text)
-val decrypted = crypto.decrypt(encrypted!!)
+val encrypted = vault.encrypt(text)
+val decrypted = vault.decrypt(encrypted!!)
 ```
 
 Support
 -----------
-* Support Android 6.0 and above.
+* Support Android 7.0 and above.
+* Jetpack Compose
 
 Changelog
 ---------
